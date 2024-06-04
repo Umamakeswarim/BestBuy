@@ -29,7 +29,7 @@ public class TC_09_CheckOutPageFilling extends BaseClassBB {
 		hp.searchProduct("Mouse");
 		Thread.sleep(8);
 		ProductPageBB pp=new ProductPageBB();;		
-		pp.addLogitechMouse();
+		pp.addRazarHeadset();
 		Thread.sleep(3);
 		CartPageBB cp=new CartPageBB();
 		cp.goToCheckOutPage();
