@@ -17,7 +17,7 @@ public class TC_06_SearchAddItemInCart extends BaseClassBB {
 		testName = "tc_06_SearchAddItemInCart";
 		testDescription = "Search a Item in search box and add it in cart";
 		testCategory = "Regression";
-		testAuthor = "Basil Ahamed";
+		testAuthor = "Umamakeswari";
 	}
 
 	@Test(priority=7)
