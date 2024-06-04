@@ -13,7 +13,7 @@ public class TC_05_ValidateLinkInBottomOfHomePage extends BaseClassBB {
 	public void setup() {
 		testName = "tc_05_validateLinkInBottomOfHomePage";
 		testDescription = "Link in HomePage bottom is broken or not";
-		testCategory = "Regression";
+		testCategory = "Umamakeswari";
 		testAuthor = "Basil Ahamed";
 	}
 	
