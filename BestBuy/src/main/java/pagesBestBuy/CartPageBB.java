@@ -8,7 +8,7 @@ import baseBestBuy.BaseClassBB;
 
 public class CartPageBB extends BaseClassBB {
 	
-	@FindBy(xpath="//a[contains(text(),'Logitech - G502 Lightspeed Wireless Optical Gaming Mouse with RGB Lighting - Black')]")
+	@FindBy(xpath="//a[contains(text(),'Razer - BlackShark V2 X Wired Gaming Headset for PC, PS5, PS4, Switch, Xbox X|S, and Xbox One - Black')]")
 	WebElement logitechMouseAddedInCart;
 	
 	@FindBy(xpath="//a[contains(text(),'Sony - 75\" Class BRAVIA XR X90K 4K HDR Full Array LED Google TV')]")
@@ -25,7 +25,7 @@ public class CartPageBB extends BaseClassBB {
 	}
 	
 	public String validateLogitechMouseInCart() {
-		return extractText(logitechMouseAddedInCart);
+		return extractText(razarheadsetAddedInCart);
 	}
 	
 	public String validateSonyTvInCart() {
