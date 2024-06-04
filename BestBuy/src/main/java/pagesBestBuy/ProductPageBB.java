@@ -8,8 +8,8 @@ import baseBestBuy.BaseClassBB;
 
 public class ProductPageBB extends BaseClassBB {
 	
-	@FindBy(xpath="//li[contains(., 'Logitech - G502 Lightspeed')]//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
-	WebElement addToCartLogitechMouse;
+	@FindBy(xpath="//li[contains(., 'Razer - BlackShark V2 X Wired Gaming Headset for PC, PS5, PS4, Switch, Xbox X|S, and Xbox One - Black']")
+	WebElement addToCartRazarHeadset;
 	
 	@FindBy(xpath="//a[text()='Go to Cart']")
 	WebElement goToCartButton;
@@ -18,11 +18,11 @@ public class ProductPageBB extends BaseClassBB {
 	WebElement continueShoping;
 	
 //	@FindBy(xpath="//div[@data-sku-id='6360418']//h4//a")
-	@FindBy(xpath="//li[contains(., 'Logitech - G502 Lightspeed')]//button[@class='c-button c-button-primary c-button-sm c-button-block c-button-icon c-button-icon-leading add-to-cart-button']")
-	WebElement logitechMouseAtProductPage;
+	@FindBy(xpath="//li[contains(., 'Razer - BlackShark V2 X Wired Gaming Headset for PC, PS5, PS4, Switch, Xbox X|S, and Xbox One - Black']")
+	WebElement RazarHeadsetAtProductPage;
 	
 	@FindBy(xpath="//a[contains(text(),'Logitech - G502 Lightspeed Wireless Optical Gaming Mouse with RGB Lighting - Black')]")
-	WebElement logitechMouseTextAtProductPage;
+	WebElement RazarHeadsetTextAtProductPage;
 	
 	@FindBy(xpath="//button[@data-sku-id='6499752' and @data-button-state='ADD_TO_CART']")
 	WebElement addToCartTv;
@@ -49,8 +49,8 @@ public class ProductPageBB extends BaseClassBB {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String addLogitechMouse() throws Exception {
-		String logiTechTitleAtProdPage = extractText(logitechMouseTextAtProductPage);
+	public String addRazarHeadset() throws Exception {
+		String RazarHeadsetTitleAtProdPage = extractText(RazarHeadsetTextAtProductPage);
 		clickOn(addToCartLogitechMouse);
 		clickOn(goToCartButton);
 		return logiTechTitleAtProdPage;
