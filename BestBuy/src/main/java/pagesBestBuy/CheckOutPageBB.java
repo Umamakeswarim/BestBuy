@@ -118,11 +118,11 @@ public class CheckOutPageBB extends BaseClassBB {
 	}
 	
 	public void signInAtCheckOut() {
-		type(emailoSignInAtCheckOut, "vino18493@gmail.com");
+		type(emailoSignInAtCheckOut, "uma220800@gmail.com");
 		type(passToSignInAtCheckOut, "testingtesting");
 		clickOn(submitSigInAtCheckOut);
-		type(this.emailAtCheckOut, "vino18493@gmail.com");
-		type(this.mobileNumAtCheckOut, "9876543210");
+		type(this.emailAtCheckOut, "uma220800@gmail.com");
+		type(this.mobileNumAtCheckOut, "9025727902");
 		clickOn(textUpdateCheckBox);
 		clickOn(continueToPayement);
 	}
