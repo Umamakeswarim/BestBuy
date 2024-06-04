@@ -27,9 +27,9 @@ public class TC_06_SearchAddItemInCart extends BaseClassBB {
 		HomePageBB hp = new HomePageBB();
 		hp.searchProduct("Mouse");
 		ProductPageBB pp = new ProductPageBB();
-		String prodTitleAtProductPage = pp.addLogitechMouse();
+		String prodTitleAtProductPage = pp.addRazarHeadset();
 		CartPageBB cp = new CartPageBB();
-		String prodTitleAtCartPage = cp.validateLogitechMouseInCart();
+		String prodTitleAtCartPage = cp.validateRazarHeadsetInCart();
 		softAssert(prodTitleAtProductPage, prodTitleAtCartPage);
 		if (prodTitleAtProductPage.equals(prodTitleAtCartPage)) {
 			reportStep("Validating Product Title - Pass", "Pass", testName);
